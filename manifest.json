@@ -1,0 +1,21 @@
+{
+  "name": "Weather PWA",
+  "short_name": "W_PWA",
+  "start_url": "/",
+  "background_color": "rgb(202 211 210 / 87%)",
+  "display": "standalone",
+  "icons": [
+    {
+        "src": "images/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "images/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+  ],
+  "orientation": "portrait",
+  "theme_color": "#ffffff"
+}
