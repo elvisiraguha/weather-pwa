@@ -4,7 +4,7 @@ self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(cacheName).then((cache) => {
       return cache
-        .addAll([`/`, `/index.html`, `/style.css`, `/main.js`])
+        .addAll([`/`, `/index.html`, `/styles.css`, `/main.js`])
         .then(() => self.skipWaiting());
     })
   );
@@ -15,7 +15,6 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log(event.request.url);
   event.respondWith(
     caches
       .open(cacheName)

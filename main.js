@@ -38,8 +38,9 @@ const handleData = (data) => {
 
 searchBox.addEventListener("keyup", ({ target }) => {
   const value = target.value;
-  const apiURL = "http://api.openweathermap.org/data/2.5/weather";
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather";
   const url = `${apiURL}?q=${value}&APPID=${apiKey}&units=metric`;
+
   setTimeout(() => {
     fetch(url)
       .then((res) => res.json())
